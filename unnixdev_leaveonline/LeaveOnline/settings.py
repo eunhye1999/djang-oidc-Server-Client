@@ -47,8 +47,8 @@ INSTALLED_APPS = [
     'apileaveonline.apps.ApileaveonlineConfig', #new
 
     'allauth',     
-    'allauth.account',     
-    'allauth.socialaccount',     
+    'allauth.account',   
+    'allauth.socialaccount',
     'allauth.socialaccount.providers.discord',
     'customprovider',  # Our custom provider  
 ]
@@ -136,7 +136,7 @@ STATIC_URL = '/static/'
 APPEND_SLASH = False
 
 LOGIN_URL = '/account/login/'
-LOGIN_REDIRECT_URL = '/user/'
+# LOGIN_REDIRECT_URL = '/user/'
 
 CSRF_COOKIE_SECURE = True
 
@@ -164,3 +164,7 @@ AUTHENTICATION_BACKENDS = (
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
+
+# SESSION_COOKIE_DOMAIN = "127.0.0.1:3200"
+
+UNIX_PROVIDER_URL = "http://localhost:5200"

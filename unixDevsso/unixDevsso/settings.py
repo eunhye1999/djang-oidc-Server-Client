@@ -129,3 +129,5 @@ LOGIN_URL = '/admin/login/'
 
 OIDC_USERINFO = 'unixDevsso.oidc_provider_settings.userinfo'
 
+
+# SESSION_COOKIE_DOMAIN = "127.0.0.1:5200"
